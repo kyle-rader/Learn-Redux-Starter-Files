@@ -8,6 +8,8 @@ export default class Main extends React.Component {
         <h1>
           <Link to='/'>Redux-agram!</Link>
         </h1>
+
+        { React.cloneElement(this.props.children, this.props) }
       </div>
     );
   }
